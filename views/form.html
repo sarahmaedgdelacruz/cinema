@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Add New Movie | Cinema World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+    <main class="form-container">
+        <h1>Add New Movie Information</h1>
+        <p class="subtitle">Fill out the form below to add a new movie to our collection.</p>
+        
+        <form action="/submit" method="post" class="movie-form">
+            <label for="title">🎞️ Movie Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter movie title" required />
+
+            <label for="genre">🎭 Genre</label>
+            <input type="text" id="genre" name="genre" placeholder="e.g. Action, Drama, Comedy" required />
+
+            <label for="director">🎬 Director</label>
+            <input type="text" id="director" name="director" placeholder="Director name" />
+
+            <label for="year">📅 Release Year</label>
+            <input type="number" id="year" name="year" min="1900" max="2099" placeholder="e.g. 2025" />
+
+            <label for="description">📝 Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Write a short description..."></textarea>
+
+            <button type="submit" class="btn">Submit Movie</button>
+            <a href="/welcome" class="link">← Back to Home</a>
+        </form>
+    </main>
+</body>
+</html>
